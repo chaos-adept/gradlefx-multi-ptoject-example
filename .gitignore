@@ -1,11 +1,19 @@
 ﻿.gradle
 .gradle/*
+.gradle/
 .idea
 build
 *.iml
 .orig
 publish
 */*/doc/*
+
+/buildSrc/build
+/buildSrc/*.ipr
+/buildSrc/*.iws
+/buildSrc/*.iml
+/buildSrc/out
+
 
 # eclipse conf file
 .settings
