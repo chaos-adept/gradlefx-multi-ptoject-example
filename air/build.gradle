@@ -1,0 +1,16 @@
+type = 'air'
+
+//dependency versions
+ext.as3commons_lang_version = '0.3.2'
+
+dependencies {
+	merged group: 'org.as3commons', name: 'as3commons-lang', version: as3commons_lang_version, ext: 'swc'
+	internal project(':domain')
+}
+
+air {
+	applicationDescriptor = 'src/main/actionscript/air-app.xml'
+	keystore = 'air-single-project.p12'
+	storepass = 'gradlefx'
+	includeFileTrees = [fileTree(dir: 'src/main/actionscript/', include: 'assets/appIcon.png')]
+} 

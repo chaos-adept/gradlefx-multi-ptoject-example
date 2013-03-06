@@ -1,0 +1,18 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath group: 'org.gradlefx', name: 'gradlefx', version: '0.6.4'
+	}
+}
+
+subprojects {
+	apply plugin: 'gradlefx'
+
+	version = '1.0-SNAPSHOT'
+
+	repositories {
+		mavenRepo name: 'yoolab-releases',      url: "http://projects.yoolab.org/maven/content/repositories/releases"
+	}
+}
