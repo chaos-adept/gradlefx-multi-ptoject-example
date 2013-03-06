@@ -1,0 +1,13 @@
+sourceSets {
+		main {
+			groovy {
+				srcDirs = ['greeting-plugin/src/main/groovy']
+			}
+		}
+
+		test {
+			groovy {
+				srcDirs = ['greeting-plugin/src/test/groovy']
+			}
+		}
+}
