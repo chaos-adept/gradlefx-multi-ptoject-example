@@ -1,18 +1,22 @@
 buildscript {
+
 	repositories {
 		mavenCentral()
 	}
+
+
 	dependencies {
 		classpath group: 'org.gradlefx', name: 'gradlefx', version: '0.6.4'
 	}
-	
-	
+
 }
+	
 
-
+	
+apply plugin: GreetingPlugin
 
 subprojects {
-	apply plugin: GreetingPlugin
+
 
 	apply plugin: 'gradlefx'
 
@@ -21,4 +25,5 @@ subprojects {
 	repositories {
 		mavenRepo name: 'yoolab-releases',      url: "http://projects.yoolab.org/maven/content/repositories/releases"
 	}
+	
 }
