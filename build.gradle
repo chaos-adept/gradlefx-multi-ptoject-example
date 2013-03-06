@@ -7,7 +7,11 @@ buildscript {
 	}
 }
 
+
+
 subprojects {
+	apply plugin: GreetingPlugin
+
 	apply plugin: 'gradlefx'
 
 	version = '1.0-SNAPSHOT'
